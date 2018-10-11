@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+// Functions
+
+@function em($target, $context: $base-number) {
+    @return ($target / $context) * 1em;
+}
+
+@function rem($target, $context: $base-number) {
+    @return ($target / $context) * 1rem;
+}
+
+$base-size: 16px;
+
+.btn-primary {
+    margin: 2rem 0;
+}
+
+.panel {
+    background-color: #f9fdfd;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+    padding: $base-size;
+    // margin-bottom: 12px;
+}
+
+// section.for-panel legend {
+//     background-color: #d9edf7;
+//     border: 1px solid #ddd;
+//     border-radius: 5px;
+//     color: #4381ba;
+//     font-size: 14px;
+//     font-weight: bold;
+//     line-height: 10px;
+//     margin: inherit;
+//     margin-bottom: 0;
+//     padding: 7px;
+//     width: auto;
+// }

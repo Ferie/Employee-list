@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <h2>Employee Portal</h2>
+    </div>
+
+    <div class="row">
+        <section class="panel panel-default">
+            <legend>Employee List</legend>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" (click)="getEmployeeList()">
+                        Get Employee List
+                    </button>
+                </div>
+            </div>
+
+            <div class="row"></div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <app-employee-list *ngIf="!!empList" [empListData]="empList"></app-employee-list>
+                </div>
+
+                <div class="col-sm-6">
+                    <app-employee-details></app-employee-details>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
