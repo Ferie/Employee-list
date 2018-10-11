@@ -14,7 +14,11 @@
         </thead>
 
         <tbody>
-            <tr *ngFor='let employee of empListData' (click)="sendEmployeeDetail(employee.id)">
+            <tr
+                *ngFor='let employee of empListData'
+                class="tableRow"
+                (click)="sendEmployeeDetail(employee.id)"
+            >
                 <td>{{ employee.id }}</td>
                 <td>{{ employee.name }}</td>
                 <td>{{ employee.salary }}</td>
