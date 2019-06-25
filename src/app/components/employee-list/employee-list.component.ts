@@ -8,11 +8,11 @@ import { EmployeeService } from '../../services';
     styleUrls: ['./employee-list.component.scss']
 })
 export class EmployeeListComponent {
-    @Input() empListData: Employee[];
+    @Input() public empListData: Employee[];
 
     constructor(private employeeService: EmployeeService) {}
 
-    sendEmployeeDetail(id: number) {
-        this.employeeService.sendEmployeeDetail(id);
+    public showEmployeeDetails(id: number) {
+        this.employeeService.getEmployeeDetails(id);
     }
 }

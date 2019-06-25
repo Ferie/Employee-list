@@ -17,7 +17,7 @@
             <tr
                 *ngFor='let employee of empListData'
                 class="tableRow"
-                (click)="sendEmployeeDetail(employee.id)"
+                (click)="showEmployeeDetails(employee.id)"
             >
                 <td>{{ employee.id }}</td>
                 <td>{{ employee.name }}</td>

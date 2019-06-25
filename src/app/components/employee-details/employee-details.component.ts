@@ -8,12 +8,12 @@ import { Employee } from '../../interfaces';
     styleUrls: ['./employee-details.component.scss']
 })
 export class EmployeeDetailsComponent implements OnInit {
-    employeeDetail: Employee;
+    public employeeDetail: Employee;
 
     constructor(private employeeService: EmployeeService) {}
 
-    ngOnInit() {
-        this.employeeService.getEmployeeDetail().subscribe(data => {
+    public ngOnInit() {
+        this.employeeService.empDetailSubject$.subscribe(data => {
             this.employeeDetail = data
         });
     }
