@@ -14,7 +14,7 @@ export class EmployeeDetailsComponent implements OnInit {
 
     public ngOnInit() {
         this.employeeService.empDetailSubject$.subscribe(data => {
-            this.employeeDetail = data
+            this.employeeDetail = data;
         });
     }
 }

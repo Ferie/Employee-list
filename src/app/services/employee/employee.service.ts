@@ -1,7 +1,7 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { Employee } from "../../interfaces";
-import { BehaviorSubject } from "rxjs";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Employee } from '../../interfaces';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class EmployeeService {
@@ -20,7 +20,7 @@ export class EmployeeService {
     }
 
     public getEmployeeDetails(id: number) {
-        let data = this.http.get<Employee>(this.apiURL + 'emplyee.' + id + '.json');
+        const data = this.http.get<Employee>(this.apiURL + 'emplyee.' + id + '.json');
         this._empDetailSubject$.next(data);
     }
 }

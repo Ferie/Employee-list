@@ -8,15 +8,15 @@ import { Employee } from './interfaces/employee.interfaces';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    empList: Employee[];
+    public empList: Employee[];
 
     constructor(private employeeService: EmployeeService) {}
 
-    ngOnInit() {
+    public ngOnInit() {
         this.getEmployeeList();
     }
 
-    getEmployeeList() {
+    public getEmployeeList() {
         this.employeeService.getEmployeeList().subscribe(data => {
             this.empList = data;
         });
