@@ -1,11 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Employee } from '../../interfaces';
-import { EmployeeService } from '../../services';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Employee } from '../../interfaces/employee.interfaces';
+import { EmployeeService } from '../../services/employee';
 
 @Component({
     selector: 'app-employee-list',
     templateUrl: './employee-list.component.html',
-    styleUrls: ['./employee-list.component.scss']
+    styleUrls: ['./employee-list.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EmployeeListComponent {
     @Input() public empListData: Employee[];
