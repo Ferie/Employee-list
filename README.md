@@ -2,7 +2,7 @@
 
 This is a `BehaviorSubject` example.
 
-[Fork it on Stackblitz](https://stackblitz.com/github/Ferie/Employee-list)!
+[View it on Stackblitz](https://stackblitz.com/github/Ferie/Employee-list)!
 
 
 ## An Angular 6 exercise
