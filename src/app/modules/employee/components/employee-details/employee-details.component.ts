@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { EmployeeService } from '../../services';
-import { Employee } from '../../interfaces';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { EmployeeService } from '../../services/employee';
+import { Employee } from '../../interfaces/employee.interfaces';
 
 @Component({
     selector: 'app-employee-details',
     templateUrl: './employee-details.component.html',
-    styleUrls: ['./employee-details.component.scss']
+    styleUrls: ['./employee-details.component.scss'],
+    // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EmployeeDetailsComponent implements OnInit {
     public employeeDetail: Employee;

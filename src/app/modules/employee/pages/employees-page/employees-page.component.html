@@ -1,0 +1,18 @@
+<div class="row">
+    <section class="panel panel-default">
+        <legend>Employee List</legend>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <app-employee-list
+                    *ngIf="empList"
+                    [empListData]="empList"
+                ></app-employee-list>
+            </div>
+
+            <div class="col-sm-6">
+                <app-employee-details></app-employee-details>
+            </div>
+        </div>
+    </section>
+</div>

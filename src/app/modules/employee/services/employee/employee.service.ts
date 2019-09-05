@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Employee } from '../../interfaces';
+import { Employee } from '../../interfaces/employee.interfaces';
 import { BehaviorSubject } from 'rxjs';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+})
 export class EmployeeService {
     public get empDetailSubject$() {
         return this._empDetailSubject$;
