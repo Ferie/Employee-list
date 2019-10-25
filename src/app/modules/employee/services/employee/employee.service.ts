@@ -22,7 +22,7 @@ export class EmployeeService {
     }
 
     public getEmployeeDetails(id: number) {
-        const data = this.http.get<Employee>(this.apiURL + 'emplyee.' + id + '.json');
-        this._empDetailSubject$.next(data);
+        const employeeDetails = this.http.get<Employee>(this.apiURL + 'emplyee.' + id + '.json');
+        this._empDetailSubject$.next(employeeDetails);
     }
 }
