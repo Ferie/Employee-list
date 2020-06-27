@@ -1,9 +1,14 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9ff53e1b-967a-4a9b-bab8-fd75122dda43/deploy-status)](https://app.netlify.com/sites/employees-list/deploys)
+
 # Employee List
 
-This is a `BehaviorSubject` example.
+This is a RxJS `BehaviorSubject` example in an Angular project.
 
-[View it on Stackblitz](https://stackblitz.com/github/Ferie/Employee-list)!
+[View it on Stackblitz](https://jvmipvmjx.github.stackblitz.io/employee-portal)!
 
+The employees table is showing many emplyees, each one of them is clickable to show their details.
+
+---
 
 ## An Angular 6 exercise
 
