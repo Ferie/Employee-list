@@ -4,7 +4,7 @@
 
 This is a RxJS `BehaviorSubject` example in an Angular project.
 
-[View it on Stackblitz](https://jvmipvmjx.github.stackblitz.io/employee-portal)!
+[See it in action](https://employees-list.netlify.app/)!
 
 The employees table is showing many emplyees, each one of them is clickable to show their details.
 
